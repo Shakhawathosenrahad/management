@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../business/business.css">
+    <link rel="stylesheet" href="./team.css">
+    <!-- js -->
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="details">
+    <header>
+        <i class="fa-solid fa-arrow-left"></i>
+    </header>
+
+    <div class="name team_table">
+        <div class="table">
+            <li>
+                <span>Team Name</span>
+                <span>team 01</span>
+            </li>
+            <li>
+                <span>Founding Date</span>
+                <span>07/12/2014</span>
+            </li>
+            <li>
+                <span>Status</span>
+                <span>Active</span>
+            </li>
+            <li>
+                <span>Date of Last Activity</span>
+                <span>11/18/2016</span>
+            </li>
+        </div>
+        <button class="change">Manage Team</button>
+    </div>
+
+    <div class="statement">
+        <div class="row">
+            <div class="statement_card">
+                <p>Most Recent Activity <i class="fa-solid fa-arrow-right"></i></p>
+                <p>10 / 13 / 2016 Income Statement Report</p>
+                <p>10 / 17 / 2016 Mentoring Session with Mentor 01</p>
+                <p>10 / 19 / 2016 Mentoring Session with Mentor 02</p>
+                <p>10 / 31 / 2016 Income Statement Report</p>
+                <p>11 / 18 / 2016 Mentoring Session with Mentor 01</p>
+            </div>
+            <div class="statement_card">
+                <p>Member History <i class="fa-solid fa-arrow-right"></i></p>
+                <table>
+                    <tr>
+                        <td>07/12/2014</td>
+                        <td>Member 01</td>
+                        <td class="join">Joined</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Member 02</td>
+                        <td class="join">Joined</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Member 03</td>
+                        <td class="join">Joined</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Member 04</td>
+                        <td class="join">Joined</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Member 05</td>
+                        <td class="join">Joined</td>
+                    </tr>
+                    <tr>
+                        <td>08/15/2016</td>
+                        <td>Member 05</td>
+                        <td class="left">Left</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="statement_card">
+            <p>Most Recent Action Plans <i class="fa-solid fa-arrow-right"></i></p>
+            <li>Action Plan 01</li>
+            <li>Action Plan 02</li>
+            <li>Action Plan 03</li>
+            <li>Action Plan 04</li>
+        </div>
+    </div>
+
+    <dialog>
+        <h2>Manage Team</h2>
+        <div class="team_member">
+            <h5 style="margin: 2px;">Team Member:</h5>
+            <div>
+                <input type="text">
+            <button><i class="fa-solid fa-plus"></i> Add Member</button>
+            </div>
+        </div>
+        <div class="status">
+            <span>Status: </span>
+            <select>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+        </div>
+        <div>
+            <button>Save</button>
+            <button>Cancel</button>
+        </div>
+    </dialog>
+</body>
+</html>

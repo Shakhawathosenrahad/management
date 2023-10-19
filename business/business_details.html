@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./business.css">
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="details">
+    <header>
+        <i class="fa-solid fa-arrow-left"></i>
+    </header>
+
+    <div class="name enterprice_table">
+        <div class="table">
+            <li>
+                <span>Enterprise Name</span>
+                <span>Enterprise 01</span>
+            </li>
+            <li>
+                <span>Managing Team</span>
+                <span>Sample Team Name 01</span>
+            </li>
+            <li>
+                <span>Date of Last Activity</span>
+                <span>Enterprise 01</span>
+            </li>
+        </div>
+        <button class="change">Change</button>
+    </div>
+
+    <div class="profit_chart">
+        <div class="chart">
+            <div id="chart"></div>
+        </div>
+        <div class="rendered">
+            <p>Products Sold/Services Rendered</p>
+            <h1>3, 189 <img src="../img/rank_up.png"></h1>
+            <p>from 2,845 of last recording period</p>
+        </div>
+    </div>
+
+    <div class="statement">
+        <div class="statement_card">
+            <p>Income Statement Report:</p>
+            <p>10/31/2016</p>
+            <p>Sales Revelue: <span>$38,106</span></p>
+            <p>Expenses: <span>$3,169</span></p>
+            <p>Profit: <span>$18,126</span></p>
+        </div>
+        <div class="statement_card">
+            <p>Revenue Change:</p>
+            <h1>$38, 106</h1>
+            <p>1.53% <img src="../img/rank_up.png"></p>
+            <p>from <span>$24,905</span>of last recording period</p>
+            <p>Profit: <span>$18,126</span></p>
+        </div>
+        <div class="statement_card">
+            <p>Expenses:</p>
+            <h1>$3, 169</h1>
+            <p>0.53% <img src="../img/rank_down.png"></p>
+            <p>from <span>$4,848.67</span>of last recording period</p>
+        </div>
+    </div>
+
+    <dialog>
+        <h2>Change Details</h2>
+        <div class="change_name">
+            <h5 style="margin: 2px;">Change Enterprise Name:</h5>
+            <input type="text">
+        </div>
+        <div class="change_team">
+            <h5 style="margin: 2px;">Change Managing Team:</h5>
+            <select></select>
+        </div>
+        <div>
+            <button>Save</button>
+            <button>Cancel</button>
+        </div>
+    </dialog>
+</body>
+</html>

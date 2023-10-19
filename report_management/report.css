@@ -1,0 +1,361 @@
+
+* {
+    margin: 0;
+}
+
+/* flexBox */
+
+body :where(.report, .report .report_btn, .logs, .row, .reporting) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 50px 20px;
+}
+
+.report {
+    padding: 20px 10%;
+}
+
+.report .report_notification {
+    width: 35%;
+    min-height: 100px;
+    border: 2px solid;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.report_btn .btn {
+    width: 200px;
+    padding: 8px 15px;
+    color: #fff;
+    background: #01742F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition-property: box-shadow, background;
+    transition-duration: 300ms;
+}
+
+.report_btn .btn:hover {
+    background: #035122;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.report_btn .fa-solid {
+    float: left;
+    margin-right: 10px;
+    color: #01742F;
+    background: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+@media (width <= 700px) {
+    .report,
+    .report .report_btn {
+        flex-wrap: wrap;
+    }
+
+    .report_btn .btn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .report .report_notification {
+        order: 1;
+        width: 100%;
+    }
+}
+
+
+/* activity logs */
+
+.logs {
+    justify-content: center;
+    padding: 25px 10%;
+}
+
+.logs .column {
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.logs .column h2:first-child {
+    margin: -42px 0 10px -10px;
+    white-space: nowrap;
+}
+
+.logs .column p:nth-child(odd) {
+    margin: 0 0 15px 10px;
+}
+
+.logs .column:last-child p {
+    margin: 20px 5px;
+}
+
+
+@media (width <= 620px) {
+    .logs {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* report management */
+
+.dialog {
+    display: none;
+    width: min(1700px, 100%);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    overflow: scroll;
+}
+
+.dialog input {
+    width: 75%;
+    margin: 10px 10px 10px 10%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.dialog .row {
+    padding: 0 10%;
+    align-items: stretch;
+}
+
+.row .column {
+    width: 70%;
+    min-height: 400px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.row .column p {
+    margin: 8px 0;
+}
+
+.column .reporting {
+    margin: 10px 0;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reporting select {
+    width: 40%;
+    padding: 2px 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.row .column:last-child {
+    width: 100%;
+    border: none;
+}
+
+.column .reporting:last-child select {
+    width: 60px;
+}
+
+.dialog .btns {
+    padding: 0 10%;
+    margin: 10px 0 20px 0;
+    text-align: right;
+}
+
+.btns button {
+    padding: 5px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background: #01742F;
+    transition: background 300ms;
+}
+
+.btns button:hover {
+    background: #035122;
+}
+
+.btns button:last-child {
+    background: #000;
+}
+
+.btns button:last-child:hover {
+    background: #535252;
+}
+
+
+@media (width <= 600px) {
+    .dialog .row {
+        flex-wrap: wrap;
+    }
+
+    .row .column {
+        width: 100%;
+    }
+}
+
+
+
+/* report archive */
+
+body.report {
+    padding: 0;
+}
+
+body.report .add_side input {
+    margin: 15px 0;
+}
+
+
+/* financial report */
+
+.financial_report,
+.mentoring_session {
+    display: none;
+    width: min(1700px, 100%);
+    margin: 0 auto;
+    position: fixed;
+    inset: 0;
+    background: #fff;
+}
+
+.financial_report .sales {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 10%;
+}
+
+.sales .revenue {
+    width: min(1000px, 100%);
+    text-align: left;
+}
+
+.revenue > div {
+    padding: 5px 5px 5px 30px;
+    border: 1px solid;
+}
+
+.revenue .head {
+    background: #E8DDDD;
+}
+
+.revenue .body {
+    width: min(250px, 100%);
+    margin: 2px 0 2px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.revenue .body:nth-last-child(2) p:last-child {
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.revenue .body:nth-last-child(2) p:last-child::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 150px;
+    height: 2px;
+    background: #787676;
+}
+
+.sales button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #53B97C;
+    cursor: pointer;
+    transition: background 300ms;
+}
+
+.sales button:hover {
+    background: #01742F;
+}
+
+
+@media (width <= 600px) {
+    .financial_report .sales {
+        flex-direction: column;
+    }
+
+    .sales .revenue {
+        order: 1;
+        overflow-x: hidden;
+    }
+}
+
+
+/* .mentoring session */
+
+.mentoring_session {
+    overflow: auto;
+}
+
+.mentoring_session header,
+.financial_report header {
+    min-height: 80px;
+    height: auto;
+}
+
+.mentoring_session .mentoring_table {
+    margin: 20px 10%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    width: min(500px, 100%);
+}
+
+.mentoring_table tr {
+    box-shadow: none;
+}
+
+.mentoring_table td {
+    padding: 5px 15px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    text-align: left;
+}
+
+@media (width <= 580px) {
+    .mentoring_session .mentoring_table {
+        width: min(320px, 100%);
+    }
+}
+
+
+.mentoring_session .row {
+    padding: 0 10% 40px 10%;
+    gap: 10px 40px;
+}
+
+.mentoring_session .column {
+    width: 100%;
+}
+
+.mentoring_session .column p {
+    margin-bottom: 50px;
+}
+
+@media (width <= 500px) {
+    .mentoring_session .row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../business/business.css">
+    <link rel="stylesheet" href="./report.css">
+    <!-- js -->
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="details">
+    <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <h1>Report Exchange Management</h1>
+    </header>
+
+    <div class="report">
+        <div class="report_notification">
+            <p>1 new Mentoring Report</p>
+            <p>1 new Financial Report</p>
+        </div>
+        <div class="report_btn">
+            <div class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Report</p>
+                <p>Management</p>
+            </div>
+            <div class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Report</p>
+                <p>Archive</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="logs">
+        <div class="column">
+            <h2>Activity Log:</h2>
+            <p>10/03/2016</p>
+            <p>Mentor 01 has submitted a mentoring report</p>
+            <p>10/31/2016</p>
+            <p>Mentor 01 has submitted a mentoring report</p>
+            <p>11/01/2016</p>
+            <p>Mentor 01 has submitted a mentoring report</p>
+        </div>
+        <div class="column">
+            <h2>Enterprise Deadlines:</h2>
+            <p>Enterprise 03 is approaching a deadline for submittin ga report at <br> 11/23/2016</p>
+            <p>Enterprise 04 is approaching a deadline for submittin ga report at <br> 11/15/2016</p>
+        </div>
+    </div>
+
+    <div class="dialog">
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <h1>Report Management</h1>
+        </header>
+        <input type="search" placeholder="Search..">
+        <div class="row">
+            <div class="column">
+                <p>Global</p>
+                <p>Enterprise 01</p>
+                <p>Enterprise 02</p>
+                <p>Enterprise 03</p>
+                <p>Enterprise 04</p>
+            </div>
+            <div class="column">
+                <h2>Enterprise 01 Rules</h2>
+                <div class="reporting">
+                    <span style="font-size: .7rem;">Reporting Frequency:</span>
+                    <select>
+                        <option>Monthly</option>
+                        <option>Yearly</option>
+                    </select>
+                </div>
+                <div class="reporting">
+                    <span style="font-size: .7rem;">Notification:</span>
+                    <select>
+                        <option>15</option>
+                        <option>10</option>
+                    </select>
+                    <span style="font-size: .7rem;">Days before deadline</span>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button>Save</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+
+body {
+    display: block;
+    background: #fff;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10%;
+    color: #fff;
+    background: #01742F;
+}
+
+header .fa-solid {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+
+/* table */
+
+section {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+section .table_side {
+    width: 100%;
+    height: 600px;
+    padding: 0 10px 10px 10px;
+    overflow-y: scroll;
+}
+
+.table_side::-webkit-scrollbar {
+    display: none;
+}
+
+.table_side input[type="search"] {
+    width: 100%;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    outline: none;
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 1px;
+    border-radius: 5px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #666;
+    overflow: hidden;
+}
+
+thead th {
+    padding: 8px 0;
+    background: #E8DDDD;
+}
+
+table tr {
+    transition: background 300ms;
+    box-shadow: 0 0 0 1px #666;
+}
+
+tbody td {
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: #ccc;
+}
+
+section .add_side {
+    width: 250px;
+    height: 200px;
+}
+
+.add_side p {
+    margin: 0;
+}
+
+.add_side select {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.add_side button {
+    width: 100%;
+    height: 45px;
+    font-size: 1rem;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: #53B97C;
+    cursor: pointer;
+    transition: box-shadow 400ms;
+}
+
+.add_side button:hover {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.add_side button ~ p {
+    margin: 5px 0;
+}
+
+
+
+/* business details style */
+
+.name {
+    max-width: 800px;
+    padding: 50px 10% 30px 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.name .table {
+    width: 100%;
+}
+
+.name div li {
+    display: flex;
+    list-style: none;
+}
+
+.name div li span {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+}
+
+.name .change {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background: #53B97C;
+    cursor: pointer;
+}
+
+
+.profit_chart {
+    padding: 0 10% 30px 10%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profit_chart .chart {
+    width: min(650px, 100%);
+    aspect-ratio: 1 / 0.4;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.profit_chart .rendered {
+    padding: 5px 30px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.rendered h1 {
+    margin-bottom: 0;
+}
+
+.rendered p:last-child {
+    margin: 0 auto 0 10px;
+    font-size: .8rem;
+    color: red;
+}
+
+.statement {
+    padding: 30px 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.statement .statement_card {
+    width: min(300px, 100%);
+    height: 150px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.statement_card p:first-child {
+    margin: -22px 0 0 -5px;
+    white-space: nowrap;
+}
+
+.statement_card :is(p:not(:first-child), h1) {
+    margin: 5px 0;
+}
+
+dialog {
+    position: fixed;
+    inset: 0;
+    padding: 0;
+    width: 450px;
+    border: none;
+    border-radius: 20px;
+}
+
+dialog h2 {
+    margin: 0;
+    padding: 15px 0 15px 30px;
+    color: #fff;
+    background: #01742F;
+}
+
+dialog > div {
+    margin: 20px 0;
+    padding: 0 30px;
+}
+
+dialog > div :is(input, select) {
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+dialog > div:last-child {
+    text-align: right;
+}
+
+dialog button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #53B97C;
+    cursor: pointer;
+}
+
+dialog button:last-child {
+    background: #000;
+}

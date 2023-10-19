@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: min(1700px, 100%);
+    margin: 0 auto;
+}
+
+/* FlexBox */
+body :where(header, .row, .column .issue > div, .column .changes > div) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+header {
+    font-size: clamp(.8rem, 2.5vw, 1.2rem);
+    padding: 15px 10%;
+    color: #fff;
+    background: #01742F;
+}
+
+header .fa-solid {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+
+
+/*  */
+
+.row {
+    padding: 50px 10%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.row .column {
+    width: 100%;
+}
+
+.column .performance_chart {
+    min-height: 200px;
+}
+
+.column > div {
+    margin: 10px 0;
+    padding: 8px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.column select {
+    height: 25px;
+}
+
+.column .issue > div,
+.column .changes > div {
+    width: 70%;
+    margin-bottom: 6px;
+}
+
+.column .changes > div {
+    width: min(200px, 100%);
+    justify-content: space-between;
+}
+
+.column .issue {
+    cursor: pointer;
+}
+
+.column .issue p {
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+.issue p:hover {
+    text-decoration: underline;
+}
+
+.print {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    float: right;
+    margin: 10px 5px;
+    color: #fff;
+    background: #01742F;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 300ms, transform 300ms;
+}
+
+.print:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.engagement p {
+    margin: 10px 0;
+}
+
+@media (width <= 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+
+/* topIssues */
+
+.topIssues {
+    width: min(1700px, 100%);
+    margin: 0 auto;
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: none;
+}
+
+.topIssues > div {
+    white-space: nowrap;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+.topIssues select {
+    width: min(200px, 100%);
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (width <= 650px) {
+    .topIssues > div {
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../business/business.css">
+    <link rel="stylesheet" href="./report.css">
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="report">
+    <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <h1>Report Exchange Archive</h1>
+    </header>
+
+    <section>
+        <div class="table_side">
+            <input type="search" placeholder="Search..">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Team</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody class="report_list">
+                    <tr>
+                        <td>11/18/2023</td>
+                        <td>Business Titans</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>12/29/2016</td>
+                        <td>Mavericks</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>1/9/2018</td>
+                        <td>Strategic Stars</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>5/22/2018</td>
+                        <td>Market Masters</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>6/13/2018</td>
+                        <td>Profit Pioneers</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>6/26/2018</td>
+                        <td>Success Syndicate</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>10/9/2018</td>
+                        <td>Money Makers</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>2/6/2019</td>
+                        <td>Deal Breakers</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>4/8/2019</td>
+                        <td>Innovation Inc.</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>10/3/2019</td>
+                        <td>Commerce Commandos</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>1/14/2020</td>
+                        <td>ROI Wizards</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>3/30/2020</td>
+                        <td>Sales Samurais</td>
+                        <td>Mentoring</td>
+                    </tr>
+                    <tr>
+                        <td>11/6/2020</td>
+                        <td>Wealth Warriors</td>
+                        <td>Financial</td>
+                    </tr>
+                    <tr>
+                        <td>2/15/2021</td>
+                        <td>Strategy Sages</td>
+                        <td>Mentoring</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="add_side">
+            <p style="margin-top: 25px;">Filter:</p>
+            <p>From:</p>
+            <input type="date">
+            <p>Type:</p>
+            <select></select>
+            <p>Team:</p>
+            <select></select>
+        </div>
+    </section>
+
+    <div class="financial_report">
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <h1>Enterprise 01 Financial Report - 10/31/2016</h1>
+        </header>
+        <div class="sales">
+            <div class="revenue">
+                <div class="head" style="border-radius: 10px 10px 0 0;">
+                    <p>Sales Revenue</p>
+                </div>
+                <div>
+                    <div class="body">
+                        <p style="opacity: 0;">Costs</p>
+                        <p>$24, 905</p>
+                    </div>
+                </div>
+                <div class="head">
+                    <p>Costs</p>
+                </div>
+                <div>
+                    <div class="body">
+                        <p>Labor Costs</p>
+                        <p>$ 8, 150</p>
+                    </div>
+                    <div class="body">
+                        <p>Packaging Cost</p>
+                        <p>$ 7, 665</p>
+                    </div>
+                    <div class="body">
+                        <p>Raw Material Cost</p>
+                        <p>$ 8, 106</p>
+                    </div>
+                    <div class="body">
+                        <p>Occupancy Cost</p>
+                        <p>$ 4, 185</p>
+                    </div>
+                    <div class="body">
+                        <p style="opacity: 0;">total</p>
+                        <b>$16, 811</b>
+                    </div>
+                </div>
+                <div class="head">
+                    <p>Expenses</p>
+                </div>
+                <div>
+                    <div class="body">
+                        <p>Operating Expenses</p>
+                        <p>$ 3, 600</p>
+                    </div>
+                    <div class="body">
+                        <p>Transportation Expenses</p>
+                        <p>$ 2, 300</p>
+                    </div>
+                    <div class="body">
+                        <p>Utility - Electricity</p>
+                        <p>$ 1, 250</p>
+                    </div>
+                    <div class="body">
+                        <p>Utility - Water</p>
+                        <p>$ 1, 250</p>
+                    </div>
+                    <div class="body">
+                        <p style="opacity: 0;">total</p>
+                        <b>$8, 400</b>
+                    </div>
+                </div>
+            </div>
+            <button>Compare</button>
+        </div>
+    </div>
+
+    <div class="mentoring_session">
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <h1>Mentoring Session: Mavericks with Mentor 01 - 01/09/2018</h1>
+        </header>
+        <table class="mentoring_table">
+            <tr>
+                <td>Team Name</td>
+                <td>Mavericks</td>
+            </tr>
+            <tr>
+                <td>Mentor Name</td>
+                <td>Mentor 01</td>
+            </tr>
+            <tr>
+                <td>Session Date</td>
+                <td>01/09/2018</td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="column" style="border: 1px solid;">
+                <p>Recommendation 01</p>
+                <p>Recommendation 02</p>
+                <p>Recommendation 03</p>
+                <p>Recommendation 04</p>
+            </div>
+            <div class="column" style="border: 1px solid;">
+                <p>Action Plan 01</p>
+                <p>Action Plan 02</p>
+                <p>Action Plan 03</p>
+                <p>Action Plan 04</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

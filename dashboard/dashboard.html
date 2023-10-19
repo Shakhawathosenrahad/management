@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/eab848cb9a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span>User</span> !</h1>
+    </header>
+
+    <section class="container">
+        <div class="column">
+            <div class="notification">
+                <h2>Notifications:</h2>
+                <p>3 Enterprises are nearing report deadlines</p>
+                <p>1 new Operations Report posted</p>
+                <p>1 new Financial Report posted</p>
+            </div>
+            <div class="startup">
+                <div class="startup_text">
+                    <select>
+                        <option>Tech Startup</option>
+                        <option>Tech Startup</option>
+                        <option>Tech Startup</option>
+                    </select>
+                    <p><span style="color: #31D268;">40</span>% positive change</p>
+                    <p><span style="color: #A3A3A3;">36.5</span>% neutral change</p>
+                    <p><span style="color: #E51A1A;">23.5</span>% negative change</p>
+                </div>
+                <div class="startup_chart">
+                    <div id="chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="cards">
+                <div class="card">
+                    <img src="../img/business.png">
+                    <div class="card_text">
+                        <p>Business</p>
+                        <p>Management</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/team.png">
+                    <div class="card_text">
+                        <p>Team</p>
+                        <p>Management</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/report.png">
+                    <div class="card_text">
+                        <p>Report</p>
+                        <p>Exchange</p>
+                        <p>Management</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/performance.png">
+                    <div class="card_text">
+                        <p>Performance</p>
+                        <p>Reports</p>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary_option">
+                    <p>Report Summary</p>
+                    <select>
+                        <option>Weekly</option>
+                    </select>
+                </div>
+                <div class="revenue">
+                    <select>
+                        <option>Revenue</option>
+                    </select>
+                    <select>
+                        <option>All Enterprises</option>
+                    </select>
+                </div>
+                <p>Enterprises 01 1.53% <span><img src="../img/rank_up.png"></span></p>
+                <p>Enterprises 02 0.53% <span><img src="../img/rank_up.png"></span></p>
+                <p>Enterprises 03 0.33% <span><img src="../img/rank_down.png"></span></p>
+                <p>Enterprises 04 1.53% <span><img src="../img/rank_up.png"></span></p>
+                <p>Enterprises 05 0.53% <span><img src="../img/rank_up.png"></span></p>
+            </div>
+        </div>
+    </section>
+    <div class="switch">
+        <button>Logout</button>
+        <h5>Version 1 <i class="fa-solid fa-caret-down"></i></h5>
+    </div>
+</body>
+</html>

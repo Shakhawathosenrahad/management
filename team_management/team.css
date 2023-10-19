@@ -1,0 +1,137 @@
+
+
+/*
+* all Style coming from
+* <link rel="stylesheet" href="../business/business.css">
+*/
+
+section {
+    gap: 80px 10px;
+}
+
+
+
+.addTeam h2 {
+    border-radius: 20px 20px 0 0;
+}
+
+.addTeam .enterp {
+    width: 60%;
+}
+
+
+
+/* team details style */
+
+.team_table {
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.table_side {
+    overflow-x: hidden;
+}
+
+@media (width <= 700px) {
+    .team_table {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+.team_table .change {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status select {
+    width: 50%;
+}
+
+.team_member > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.team_member button {
+    white-space: nowrap;
+    width: 100px;
+    padding:  5px;
+    font-size: .7rem;
+    background: #53B97C;
+}
+
+
+/* income statement */
+
+.statement {
+    width: 90%;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+}
+
+.statement .row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    width: 100%;
+}
+
+.statement .statement_card {
+    width: 100%;
+    height: auto;
+}
+
+.statement_card > p:first-child {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+.statement_card > p:hover {
+    text-decoration: underline;
+}
+
+.statement .statement_card p:last-child {
+    margin-bottom: 20px;
+}
+
+.statement_card table {
+    width: 80%;
+    margin: 5px 0 30px 0;
+    box-shadow: none;
+}
+
+.statement_card table tr {
+    box-shadow: none;
+}
+
+table tr td {
+    padding: 3px 0;
+}
+
+table td.join {
+    color: #3E9B12;
+}
+
+table td.left {
+    color: #E51A1A;
+}
+
+.statement_card li {
+    margin: 10px 0 50px 0;
+    list-style: none;
+}

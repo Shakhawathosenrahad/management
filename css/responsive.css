@@ -1,0 +1,47 @@
+/* dashboard responsive */
+
+@media (width <= 700px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container .column:nth-child(1) {
+        order: 1;
+    }
+}
+
+
+/* business details responsive style */
+
+@media (width <= 700px) {
+    section {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    section .table_side {
+        order: 1;
+    }
+
+    section .add_side {
+        align-self: center;
+    }
+}
+
+@media (width <= 800px) {
+    .profit_chart {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+}
+
+@media (width <= 700px) {
+    .statement {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statement .statement_card {
+        margin: 15px 0;
+    }
+}
